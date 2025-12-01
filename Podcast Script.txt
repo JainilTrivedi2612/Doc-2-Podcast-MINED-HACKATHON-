@@ -1,0 +1,99 @@
+[INTRO MUSIC]
+
+Host: Hey there, welcome to "Tech Talks", the podcast that brings AI and healthcare together in a witty and light-hearted way, perfect for our Youth/Gen Z audience! I'm your host, John, and today we have two amazing guests with us, Cactus and Rose. They are domain experts in the field of AI and healthcare, and they're here to talk about a fascinating research paper on a Retrieval Augmented Generative AI (RAG) Chatbot framework designed specifically for healthcare applications.
+
+Host: So, first things first, Cactus, can you explain what Generative AI is, and why it's transforming healthcare?
+
+Cactus: Sure, John! Generative AI refers to AI models that can generate new content, text, images, or even music by learning patterns from large datasets. When it comes to healthcare, Generative AI is proving to be a game-changer, as it can handle complex tasks, like providing clinical decision support, making diagnoses, or even engaging in conversations to provide insights.
+
+Rose: Absolutely, Cactus! But it's not all sunshine and rainbows. There are some significant limitations, like "AI hallucinations" and other constraints that have emerged in practical applications. And that's where our Retrieval Augmented Generation (RAG) approach comes in.
+
+Host: Ooh, "AI hallucinations" sound intriguing! Can you elaborate on that, Rose?
+
+Rose: Sure, John! Sometimes, AI models can generate incorrect or nonsensical outputs, which we call "hallucinations." These usually happen when the AI is working with incomplete or inaccurate data.
+
+Cactus: That's right! And RAG is designed to address these limitations by merging retrieval-based and generative models, which enhances the accuracy and relevance of generated text for contextually appropriate responses. It's shown some rapid domain adoption in healthcare, and we believe it could bridge the gap between advanced AI capabilities and practical medical service delivery.
+
+Host: Wow, that's impressive! So, what exactly is this Retrieval Augmented Generative AI Chatbot framework you've developed?
+
+Rose: Well, John, our framework integrates external data repositories and information produced through analysis via the RAG architecture. We've designed it to enrich results using Generative AI models in consultation summaries, diagnostic insights, and emotional assessments of patients.
+
+Cactus: Exactly! This framework is organized into three sections: an introduction to the framework and related work, a demonstration of the framework's capabilities, and a conclusion summarizing the paper's findings.
+
+Host: Intriguing! Let's dive into the details of the framework. Cactus, can you tell us about the five modules that make up this chatbot?
+
+Cactus: Of course, John! The proposed framework for a chatbot in telehealth consists of five modules: pre-existing data, conversation summarisation, disease diagnosis, emotion detection, and Retrieval Augmented Generation (RAG).
+
+Host: That sounds like a lot! Let's break it down. Rose, can you explain the pre-existing data module and how it integrates data from various sources?
+
+Rose: Absolutely, John! The pre-existing data module integrates structured and unstructured data, including patient conversations from telehealth consultations, and domain-specific knowledge from various sources. We consolidate this data into a data model using a data lakehouse.
+
+Host: Impressive! And, Cactus, how does the conversation summarisation module work its magic?
+
+Cactus: Great question, John! The conversation summarisation module, utilizing LangChain and advanced NLP capabilities like GPT-4 and BioBERT, summarizes complex medical discussions and extracts key clinical entities for constructing comprehensive patient profiles.
+
+Host: Now, I'm curious about the disease diagnosis module. Rose, can you tell us how it uses ML models to provide diagnostic insights based on symptom patterns and other EHR data attributes?
+
+Rose: Sure thing, John! The disease diagnosis module analyzes patient consultation history, identifying symptom patterns, previous diagnoses, and other EHR data attributes to provide diagnostic insights using various ML models like Random Forest, Decision Trees, XGBoost, Support Vector Machines, and DL models. We also employ unsupervised methods and transformer models to detect patterns, anomalies, and clusters in disease detection.
+
+Host: That's fantastic! Emotions play a significant role in healthcare, too. Cactus, can you explain how the emotion detection module supports clinicians in understanding and addressing patients' emotional states?
+
+Cactus: Indeed, John! The emotion detection module, based on Robert Plutchik's psychological framework, supports clinicians in understanding and addressing patients' emotional states. We've developed and fine-tuned an AI-driven emotion model that's capable of discerning emotion intensities and managing negations for various scenarios in the healthcare domain.
+
+Host: And finally, let's talk about the RAG module. Rose, can you walk us through how it initiates data loading and transformation, converting data into manageable segments?
+
+Rose: Sure! The RAG module initiates with data loading and transformation, converting data into manageable segments (chunking) and storing embeddings in a vector store for efficient information retrieval based on semantic similarity. We use LangChain and LlamaIndex to facilitate the implementation of RAG in applications that enhance the interaction and capabilities of LLMs.
+
+[MUSIC TRANSITION]
+
+Host: Now that we've covered the framework's modules, let's take a look at some fascinating demonstrations using a healthcare dataset, which includes Electronic Health Records (EHR) data and transcribed telehealth conversations. Cactus, can you tell us about the conversation summarization module and its key features?
+
+Cactus: Sure thing, John! healthcare professionals can obtain a patient summary using a unique patient ID. A conversational retrieval agent processes the query and retrieves relevant information through interaction with the ChatModel. Clinical entities identified by the medical Named Entity Recognition (NER) pipeline are highlighted in the patient summary.
+
+Host: It seems like the conversation summarization module is pretty helpful for healthcare professionals. Rose, can you tell us about the disease diagnosis module and how it helps telehealth consultants, for instance, with predicting lung cancer?
+
+Rose: Of course, John! Healthcare consultants can access diagnostic predictions for specific patients. We developed a lung cancer predictive model using data from a lung cancer patient cohort. The XGBoost model, with an F1 score of 93.02%, was selected for its superior performance. The model leverages clinical entities from consultation discussions and EHR data for its predictions.
+
+Host: And what about the emotion detection module? I'm sure it plays a crucial role in healthcare, too.
+
+Rose: You're right, John! Healthcare consultants can inquire about the patient's emotional and mental health status through the conversational agent. We've implemented a customized emotion model that includes four positive emotions like happiness, hopefulness/optimism, surprise, and trust, and four negative emotions like anger, disgust, sadness/disappointment, and helplessness.
+
+Host: I can see how helpful the emotion detection module is for understanding patients' emotions, Rose. And finally, Cactus, what can you tell us about the emotion timeline analysis and emotion transition module?
+
+Cactus: The emotion timeline analysis and emotion transition module allow telehealth consultants to track a patient's emotional progression over time, John! Emotion changes are displayed over time, and emotion transition profiles are available at both the call and patient levels. These profiles equip telehealth consultants with valuable information to prepare for upcoming consultations.
+
+Host: It's amazing to see how this Retrieval Augmented Generative AI (RAG) Chatbot framework can help healthcare professionals in so many aspects of patient care! Now, I'd like to move on to some fun and engaging segments like Hot Takes, Fact Check, Audience Questions, and Rapid Fire Rounds.
+
+[ENGAGING SEGMENTS MUSIC]
+
+Host: Alright, it's time for our Hot Takes segment! Cactus, what's your hot take on the future of Generative AI in healthcare?
+
+Cactus: I think Generative AI will become an indispensable tool for healthcare professionals, enabling them to provide more accurate and timely diagnoses, while also increasing their efficiency and satisfaction in their work.
+
+Host: Rose, what about you? What's your hot take on the role of AI agents in healthcare?
+
+Rose: Well, John, I believe AI agents will significantly impact the way healthcare is delivered, fostering a more personalized, data-driven approach that will benefit both patients and practitioners.
+
+Host: It's time for our Fact Check segment! I've heard that AI is already really good at diagnosing certain conditions. Is that true?
+
+Rose: Yes, John, it is! In some cases, AI has even outperformed human doctors in diagnosing certain conditions. However, it's important to remember that AI isn't perfect and it still needs to work alongside human professionals to provide the best possible care.
+
+Host: Great insights, Rose! Now, let's open the floor to our audience for some questions. You can submit your questions through our social media channels. Our first question comes from Twitter: "How do you address the ethical concerns surrounding AI in healthcare?"
+
+Cactus: That's a great question! We believe transparency, accountability, and fairness are essential for addressing ethical concerns. By ensuring that AI systems are explainable, responsible, and unbiased, we can build trust and confidence in these technologies.
+
+Host: Let's do a Rapid Fire Round, in which I ask you quick questions and you give brief answers! Here we go: What's your favorite AI model, and why?
+
+Rose: GPT-4, because it's versatile and capable of generating high-quality content.
+
+Host: Cactus, what's the most exciting AI trend in healthcare?
+
+Cactus: AI-driven drug discovery, as it could potentially accelerate the development of life-saving treatments.
+
+Host: If AI could solve one healthcare problem right now, what would it be, and why?
+
+Rose: I think it would be improving mental health support by providing personalized interventions based on individual needs. This could help address the significant mental health crisis we face today.
+
+Host: Well, that wraps up our Rapid Fire Round! Thanks for joining me today, Cactus and Rose. It's always a pleasure to have you on the show. And thank you, Gen Z and Youth audience, for tuning in! If you enjoyed today's episode, make sure to subscribe to our podcast and follow us on social media for more exciting tech and healthcare discussions!
+
+[OUTRO MUSIC]
